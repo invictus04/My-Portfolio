@@ -1,4 +1,5 @@
 import { IconCloud } from "./magicui/icon-cloud";
+import { MagicCard } from "./magicui/magic-card";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
 export function TechStack() {
@@ -35,10 +36,22 @@ export function TechStack() {
     (slug) => `https://cdn.simpleicons.org/${slug}/${slug}`,
   );
 
+
+
 const items = [
     {
-        title: "Languages",
-        description: "Java, Python, C, Kotlin, Dart",
+        title: (
+            <div>
+                <h2 className="text-2xl px-2 py-2 font-semibold text-[#a3cef1]">Development Skills</h2>
+            </div>
+        ),
+        description: (
+            <div className="py-4 px-2 space-y-2">
+               <p className="text-lg text-[#e7ecef]"><span className="font-semibold text-[#8b8c89]">Languages: </span>Java, Python, C, Kotlin, Dart</p>   
+               <p className="text-lg text-[#e7ecef]"><span className="font-semibold text-[#8b8c89]">Frontend: </span>HTML, CSS, Flutter</p>   
+               <p className="text-lg text-[#e7ecef]"><span className="font-semibold text-[#8b8c89]">Backend Frameworks: </span>Spring, Spring Boot, Hibernate, Maven</p>
+            </div>
+        ),
         className: "row-span-1 col-span-1"
     },
     {
@@ -51,25 +64,36 @@ const items = [
         className: "row-span-2 col-span-2 bg-black"
     },
     {
-        title: "Frameworks",
-        description: "Spring, Spring Boot, Hibernate, Maven, Flutter",
+        title:( 
+            <div>
+                <h2 className="text-2xl px-2 font-semibold text-[#a3cef1]"> Database & Cloud Skills</h2>
+            </div>
+            ),
+            description:(
+                <div className="py-4 px-2 space-y-2">
+                <p className="text-lg text-[#e7ecef]"><span className="font-semibold text-[#8b8c89]">Databases:</span> MySQL, SQLite, PostgreSQL </p>
+                <p className="text-lg text-[#e7ecef]"><span className="font-semibold text-[#8b8c89]">Cloud:</span> Google Cloud Platform</p>
+                <p className="text-lg text-[#e7ecef]"><span className="font-semibold text-[#8b8c89]">Tools & Platforms: </span>Git, GitHub, Postman, Figma, Firebase</p>
+            </div>
+        ),
         className: "row-span-1 col-span-1"
     },
 ];
 
-
     return (
-        <section className="relative py-20 bg-black">
-            <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
-                {items.map((item, index) =>
-                    <BentoGridItem 
-                    key={index} 
-                    title={item.title} 
-                    description={item.description} 
-                    className={item.className} 
-                    />
-                )}
+        <section className="relative py-8">
+            <BentoGrid className="max-w-4xl px-2 py-4">
+            {items.map((item, index) => (
+            <MagicCard key={index} className={item.className} gradientFrom="#d397fa" gradientTo="#8364e8">
+            <div className="py-2 px-2 flex flex-col items-left justify-center">
+                {item.title}
+                {item.description}
+            </div>
+            </MagicCard>
+            ))}
             </BentoGrid>
         </section>
     );
 }
+
+

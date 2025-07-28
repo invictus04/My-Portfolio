@@ -8,10 +8,10 @@ export default function Home() {
   return ( 
     <>
       <MainScreen/>
-      <AboutMe/>
+      {/* <AboutMe/> */}
       <TechStack/>
-      <ProjectsComponent/>
-      <ContactMe/>
+      {/* <ProjectsComponent/>
+      <ContactMe/> */}
     </>
   );
 }

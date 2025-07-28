@@ -18,8 +18,9 @@ export function MainScreen() {
                     </span> <br />
                     Bringing Digital Visions to Life
                 </h2>
-                <div className="flex justify-center mt-16">
-                    <RainbowButton size="lg" variant="outline" className="text-neutral-300">Know about me</RainbowButton>
+                <div className="flex justify-center mt-16 space-x-13">
+                    <RainbowButton size="lg" variant="outline" className="text-neutral-300">About me</RainbowButton>
+                    <RainbowButton size="lg" variant="outline" className="text-neutral-300">Resume</RainbowButton>
                 </div>
             </div>
         </div>
