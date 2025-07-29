@@ -81,7 +81,7 @@ const items = [
 ];
 
     return (
-        <section className="relative py-8">
+        <section className="py-8 min-h-screen">
             <BentoGrid className="max-w-4xl px-2 py-4">
             {items.map((item, index) => (
             <MagicCard key={index} className={item.className} gradientFrom="#d397fa" gradientTo="#8364e8">

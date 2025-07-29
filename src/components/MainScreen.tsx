@@ -19,8 +19,8 @@ export function MainScreen() {
                     Bringing Digital Visions to Life
                 </h2>
                 <div className="flex justify-center mt-16 space-x-13">
-                    <RainbowButton size="lg" variant="outline" className="text-neutral-300">About me</RainbowButton>
-                    <RainbowButton size="lg" variant="outline" className="text-neutral-300">Resume</RainbowButton>
+                    <RainbowButton size="lg" variant="outline" className="text-neutral-300 transition-transform duration-300 hover:translate-y-[-2px] hover:shadow-lg cursor-pointer">About me</RainbowButton>
+                    <RainbowButton size="lg" variant="outline" className="text-neutral-300 transition-transform duration-300 hover:translate-y-[-2px] hover:shadow-lg cursor-pointer">Resume</RainbowButton>
                 </div>
             </div>
         </div>
