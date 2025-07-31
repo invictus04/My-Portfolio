@@ -1,6 +1,6 @@
 export function ProjectsComponent() {
     return (
-        <section className="py-20">
+        <section className="py-20 w-full min-h-screen">
             <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-4xl font-bold mb-4">Projects</h2>
                 <p className="text-lg text-gray-600">

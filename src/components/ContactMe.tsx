@@ -3,7 +3,7 @@ import { RainbowButton } from "./magicui/rainbow-button";
 
 export function ContactMe() {
     return (
-        <section className="py-20">
+        <section className="py-20 min-h-screen">
                 <h2 className="text-3xl font-bold mb-4 text-neutral-200 text-center">
                     Get in Touch With Me
                 </h2>
