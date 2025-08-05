@@ -1,6 +1,5 @@
 import Github from "./link/github";
 import CorporateSocial from "./link/CorporateSocial";
-import LinkedIn1 from "./link/CorporateSocial";
 import Twitter from "./link/twitter";
 
 export function AboutMe() {
@@ -21,7 +20,7 @@ export function AboutMe() {
 
         <div className="max-w-2xl text-neutral-200">
             <p className="text-lg text-justify pt-10">
-                Hi!👋, I'm Rajvardhan, a Flutter and Java developer skilled in building Android apps, REST APIs, and full-stack projects. I've created solutions like a URL shortener, Food Comparison App, and SpendWise.
+                Hi!👋, I'm Rajvardhan, a Flutter and Java developer skilled in building Android apps, REST APIs, and full-stack projects.
                 <br /><br />
                 I’m passionate about crafting scalable, user-friendly software and always eager to learn and take on new challenges that make a real impact through technology.
                 <br /><br />

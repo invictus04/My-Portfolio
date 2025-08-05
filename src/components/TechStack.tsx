@@ -81,7 +81,7 @@ const items = [
 ];
 
     return (
-        <section className="py-10 min-h-screen w-full">
+        <section className="py-10 min-h-screen w-full bg-black">
             <h2 className="text-4xl font-bold mb-4 text-neutral-200 text-center">
                 Tech Stack 
             </h2>
