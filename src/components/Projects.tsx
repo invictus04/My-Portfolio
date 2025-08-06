@@ -4,28 +4,35 @@ export function ProjectsComponent() {
 const projects = [
         {
             imageUrl: "https:www.google.com",
-            title: "Project Title",
-            description: "Project description goes here.",
+            title: "Zwiggy",
+            description: "Full-stack app with Spring Boot backend and Flutter frontend to scrape and compare food deals from Swiggy & Zomato, offering the best value to users.",
+            githubLink: "https://github.com/invictus04/Zwiggy"
+        },
+        {
+            imageUrl: "https:www.google.com",
+            title: "Restaurant Price Comparison API – Swiggy & Zomato Scraper",
+            description: "Built a Spring Boot app with web scrapers for Swiggy & Zomato to compare prices, ratings, and delivery times, helping users find the best food deals.",
             githubLink: "https://www.google.com"
         },
         {
             imageUrl: "https:www.google.com",
-            title: "Project Title",
-            description: "Project description goes here.",
-            githubLink: "https://www.google.com"
+            title: "Short News App",
+            description: "Flutter app fetching bite-sized news from Inshorts API with category filtering, smooth UI, and external article access.",
+            githubLink: "https://github.com/invictus04/Short-News"
         },
         {
             imageUrl: "https:www.google.com",
-            title: "Project Title",
-            description: "Project description goes here.",
-            githubLink: "https://www.google.com"
+            title: "SpendWise – Personal Finance Management App",
+            description: "Kotlin-based finance app with MVVM and Room DB for tracking expenses, featuring data visualization and intuitive UI.",
+            githubLink: "http://github.com/invictus04/SpendWise"
         },
         {
             imageUrl: "https:www.google.com",
-            title: "Project Title",
-            description: "Project description goes here.",
-            githubLink: "https://www.google.com"
-        }
+            title: "ShortyURL – URL Shortener Backend API",
+            description: "Spring Boot API for URL shortening with PostgreSQL, built with TDD and optimized for performance and security.",
+            githubLink: "https://github.com/invictus04/ShortyURL"
+        },
+
 
     ];
 

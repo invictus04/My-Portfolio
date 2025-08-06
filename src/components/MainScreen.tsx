@@ -1,9 +1,18 @@
+"use client";
+
 import { RainbowButton } from "./magicui/rainbow-button";
 import { FlipWords } from "./ui/flip-words";
 import { Spotlight } from "./ui/spotlight-new";
 
 export function MainScreen() {
     const words = ["Flutter" ,"Java" , "Kotlin"];
+
+    const handleScroll = () => {
+        const section = document.getElementById("about-me");
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    }
     return(
         <div className="flex items-center justify-center min-h-screen w-full bg-black/[0.96] antialiased relative overflow-hidden">
             <Spotlight />
@@ -19,7 +28,7 @@ export function MainScreen() {
                     Bringing Digital Visions to Life
                 </h2>
                 <div className="flex justify-center mt-16 space-x-13">
-                    <RainbowButton size="lg" variant="outline" className="text-neutral-300 transition-transform duration-300 hover:translate-y-[-2px] hover:shadow-lg cursor-pointer">About me</RainbowButton>
+                    <RainbowButton size="lg" variant="outline" className="text-neutral-300 transition-transform duration-300 hover:translate-y-[-2px] hover:shadow-lg cursor-pointer" onClick={handleScroll}>About me</RainbowButton>
                     <RainbowButton size="lg" variant="outline" className="text-neutral-300 transition-transform duration-300 hover:translate-y-[-2px] hover:shadow-lg cursor-pointer">Resume</RainbowButton>
                 </div>
             </div>

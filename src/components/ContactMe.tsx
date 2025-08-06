@@ -5,56 +5,36 @@ import { RainbowButton } from "./magicui/rainbow-button";
 
 export function ContactMe() {
 
-    async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-        event.preventDefault();
-        const formData = new FormData(event.currentTarget);
-
-        formData.append("access-key","3117f41b-aa55-4e7c-a7af-8cb9d763fed8");
-
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                Accept: "application/json"
-            },
-            body: json
-        });
-
-        const result = await response.json();
-          if (result.success) {
-              console.log(result);
-          }
-    }
 
     return (
         <section className="py-20 min-h-screen">
                 <h2 className="text-3xl font-bold mb-4 text-neutral-200 text-center">
                     Get in Touch With Me
                 </h2>
-                <form className="w-full max-w-md bg-transparent p-5 rounded-lg shadow-md mx-auto" onSubmit={handleSubmit}>
+                <form action="https://api.staticforms.xyz/submit" method="POST" className="w-full max-w-md bg-transparent p-5 rounded-lg shadow-md mx-auto" >
+                    <input type="hidden" name="apiKey" value="sf_g8e20fln9f79jh5hc50kh34c"/>
                     <div className="mb-4">
-                        <label className="block text-[#e7ecef] font-medium mb-2">
+                        <label className="block text-[#e7ecef] font-medium mb-2" htmlFor="name">
                             Name:
                         </label>
                         <input
                             type="text"
+                            name="name"
                             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8364e8]"
                         />
                     </div>
                     <div className="mb-4">
-                        <label className="block text-[#e7ecef] font-medium mb-2">
+                        <label className="block text-[#e7ecef] font-medium mb-2" htmlFor="email">
                             Email:
                         </label>
                         <input
                             type="email"
+                            name="email"
                             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8364e8]"
                         />
                     </div>
                     <div className="mb-4">
-                        <label className="block text-[#e7ecef] font-medium mb-2">
+                        <label className="block text-[#e7ecef] font-medium mb-2" htmlFor="message">
                             Message:
                         </label>
                         <textarea
