@@ -7,7 +7,7 @@ export function ContactMe() {
 
 
     return (
-        <section className="py-20 min-h-screen">
+        <section className="py-20 min-h-screen bg-black">
                 <h2 className="text-3xl font-bold mb-4 text-neutral-200 text-center">
                     Get in Touch With Me
                 </h2>
