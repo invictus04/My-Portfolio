@@ -4,7 +4,7 @@ import Twitter from "./link/twitter";
 
 export function AboutMe() {
     return (
-        <section className="py-10 min-h-screen w-full bg-black">
+        <section className="py-10 min-h-screen w-full bg-black" id="about-me">
     <h2 className="text-4xl font-bold mb-10 text-neutral-200 text-center">
         About Me
     </h2>
