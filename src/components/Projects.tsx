@@ -19,7 +19,7 @@ const projects = [
             imageUrl: PriceComparisonImage,
             title: "Restaurant Price Comparison API – Swiggy & Zomato Scraper",
             description: "Built a Spring Boot app with web scrapers for Swiggy & Zomato to compare prices, ratings, and delivery times, helping users find the best food deals.",
-            githubLink: "https://www.google.com"
+            githubLink: "https://github.com/invictus04/Zwiggy"
         },
         {
             imageUrl: ShortNewsImage,
