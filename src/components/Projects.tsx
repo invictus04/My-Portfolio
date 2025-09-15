@@ -1,33 +1,40 @@
 import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
+import ZwiigyImage from "../../public/assets/ziwwgy_fullstack.png";
+import ShortNewsImage from "../../public/assets/short_news.png";
+import SpendWiseImage from "../../public/assets/spend_wise.png";
+import ShortyURLImage from "../../public/assets/short_urlpng.png";
+import PriceComparisonImage from "../../public/assets/price_comparison.png";
+import { s } from "motion/react-client";
+
 
 export function ProjectsComponent() {
 const projects = [
         {
-            imageUrl: "https:www.google.com",
+            imageUrl: ZwiigyImage,
             title: "Zwiggy",
             description: "Full-stack app with Spring Boot backend and Flutter frontend to scrape and compare food deals from Swiggy & Zomato, offering the best value to users.",
             githubLink: "https://github.com/invictus04/Zwiggy"
         },
         {
-            imageUrl: "https:www.google.com",
+            imageUrl: PriceComparisonImage,
             title: "Restaurant Price Comparison API – Swiggy & Zomato Scraper",
             description: "Built a Spring Boot app with web scrapers for Swiggy & Zomato to compare prices, ratings, and delivery times, helping users find the best food deals.",
             githubLink: "https://www.google.com"
         },
         {
-            imageUrl: "https:www.google.com",
+            imageUrl: ShortNewsImage,
             title: "Short News App",
             description: "Flutter app fetching bite-sized news from Inshorts API with category filtering, smooth UI, and external article access.",
             githubLink: "https://github.com/invictus04/Short-News"
         },
         {
-            imageUrl: "https:www.google.com",
+            imageUrl: SpendWiseImage,
             title: "SpendWise – Personal Finance Management App",
             description: "Kotlin-based finance app with MVVM and Room DB for tracking expenses, featuring data visualization and intuitive UI.",
             githubLink: "http://github.com/invictus04/SpendWise"
         },
         {
-            imageUrl: "https:www.google.com",
+            imageUrl: ShortyURLImage,
             title: "ShortyURL – URL Shortener Backend API",
             description: "Spring Boot API for URL shortening with PostgreSQL, built with TDD and optimized for performance and security.",
             githubLink: "https://github.com/invictus04/ShortyURL"
@@ -45,7 +52,7 @@ const projects = [
         {projects.map ((item,index) => (
                 <div className="rounded-xl p-6 w-full max-w-4xl mx-auto flex items-center gap-6 mb-8" key={index}>
                     <div className="flex-shrink-0 w-32 h-32 rounded-lg overflow-hidden">
-                        <img src={item.imageUrl} alt="Project Preview" className="w-full h-full object-cover"  />
+                        <img src={typeof item.imageUrl === "string" ? item.imageUrl : item.imageUrl.src} alt="Project Preview" className="w-full h-full object-cover"  />
                     </div>
                 <div className="flex flex-col">
                     <h3 className="text-xl font-semibold text-[#a3cef1] mb-1">{item.title}</h3>
