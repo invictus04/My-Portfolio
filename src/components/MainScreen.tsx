@@ -17,7 +17,7 @@ export function MainScreen() {
 
     const handleDownload = () => {
         const link = document.createElement("a");
-        link.href = "/assets/raj_cv.pdf"; // File in public/assets
+        link.href = "/assets/Raj_vardhan_cv.pdf"; // File in public/assets
         link.download = "Raj_Vardhan_Singh_CV.pdf"; // Suggested filename
         document.body.appendChild(link);
         link.click();
