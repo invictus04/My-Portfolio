@@ -1,6 +1,7 @@
 import Github from "./link/github";
 import CorporateSocial from "./link/CorporateSocial";
 import Twitter from "./link/twitter";
+import LeetCode from "./link/leetcode";
 
 export function AboutMe() {
   return (
@@ -53,6 +54,11 @@ export function AboutMe() {
             >
               <CorporateSocial />
             </a>
+            <a href="https://leetcode.com/u/DynamicGuy04/" target="_blank" rel="noopener noreferrer">
+              <LeetCode/>
+            </a>
+
+
           </div>
         </div>
       </div>
