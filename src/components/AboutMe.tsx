@@ -57,8 +57,6 @@ export function AboutMe() {
             <a href="https://leetcode.com/u/DynamicGuy04/" target="_blank" rel="noopener noreferrer">
               <LeetCode/>
             </a>
-
-
           </div>
         </div>
       </div>
