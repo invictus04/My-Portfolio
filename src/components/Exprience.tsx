@@ -2,7 +2,7 @@ import { Briefcase, Calendar } from 'lucide-react';
 
 export function Experience() {
   const experience = {
-    title: "Software Developer Engineer Intern",
+    title: "Software Development Engineer Intern",
     company: "funcBind",
     duration: "May 03' - Nov 04'",
     responsibilities: [
