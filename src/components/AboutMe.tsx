@@ -6,7 +6,7 @@ import LeetCode from "./link/leetcode";
 export function AboutMe() {
   return (
     <section className="py-10 min-h-screen w-full bg-black px-4 sm:px-6 lg:px-12" id="about-me">
-      <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-neutral-200 text-center">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-10 text-neutral-200 text-center">
         About Me
       </h2>
 
@@ -21,7 +21,7 @@ export function AboutMe() {
         </div>
 
         <div className="max-w-2xl text-neutral-200 text-center lg:text-left">
-          <p className="text-base sm:text-lg leading-relaxed">
+          <p className="text-lg sm:text-xl leading-relaxed">
             Hi!👋, I'm Rajvardhan, a Flutter and Java developer skilled in building Android apps,
             REST APIs, and full-stack projects.
             <br /><br />

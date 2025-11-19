@@ -37,11 +37,17 @@ export function ProjectsComponent() {
         "Spring Boot API for URL shortening with PostgreSQL, built with TDD and optimized for performance and security.",
       githubLink: "https://github.com/invictus04/ShortyURL",
     },
+    // {
+    //   imageUrl: "assets/taskify.png",
+    //   title: "Taskify – Task Management Application",
+    //   description: "A task management app to organize and prioritize your daily activities efficiently.",
+    //   githubLink: "https://github.com/invictus04/Task-frontend"
+    // }
   ];
 
   return (
     <section className="py-10 w-full min-h-screen bg-black px-4">
-      <h2 className="text-4xl font-bold mb-10 text-[#e7ecef] text-center">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-10 text-[#e7ecef] text-center">
         Projects
       </h2>
       {projects.map((item, index) => (
@@ -59,10 +65,10 @@ export function ProjectsComponent() {
           </div>
 
           <div className="flex flex-col text-center md:text-left flex-1">
-            <h3 className="text-lg sm:text-xl font-semibold text-[#a3cef1] mb-2">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-[#a3cef1] mb-2">
               {item.title}
             </h3>
-            <p className="text-[#e7ecef] text-sm sm:text-base leading-relaxed mb-4">
+            <p className="text-[#e7ecef] text-lg sm:text-lg leading-relaxed mb-4">
               {item.description}
             </p>
             <div className="mt-auto">

@@ -42,7 +42,7 @@ const items = [
     {
         title: (
             <div>
-                <h2 className="text-2xl px-2 py-2 font-semibold text-[#a3cef1]">Development Skills</h2>
+                <h2 className="text-2xl sm:text-3xl px-2 py-2 font-semibold text-[#a3cef1]">Development Skills</h2>
             </div>
         ),
         description: (
@@ -66,7 +66,7 @@ const items = [
     {
         title:( 
             <div>
-                <h2 className="text-2xl px-2 font-semibold text-[#a3cef1]"> Database & Cloud Skills</h2>
+                <h2 className="text-2xl sm:text-3xl px-2 font-semibold text-[#a3cef1]"> Database & Cloud Skills</h2>
             </div>
             ),
             description:(
@@ -82,7 +82,7 @@ const items = [
 
     return (
         <section className="py-10 min-h-screen w-full bg-black">
-            <h2 className="text-4xl font-bold mb-4 text-neutral-200 text-center">
+            <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-neutral-200 text-center">
                 Tech Stack 
             </h2>
             <BentoGrid className="max-w-4xl px-2 py-4">

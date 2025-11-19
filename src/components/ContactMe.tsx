@@ -65,7 +65,7 @@ export function ContactMe() {
 
   return (
     <section className="py-16 sm:py-20 min-h-screen bg-black px-4 sm:px-6 lg:px-12 relative">
-      <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-neutral-200 text-center">
+      <h2 className="text-4xl sm:text-5xl font-bold mb-6 text-neutral-200 text-center">
         Get in Touch With Me
       </h2>
 
@@ -76,7 +76,7 @@ export function ContactMe() {
   
         <div className="mb-4">
           <label
-            className="block text-[#e7ecef] font-medium mb-2 text-sm sm:text-base"
+            className="block text-[#e7ecef] font-medium mb-2 text-lg sm:text-xl"
             htmlFor="name"
           >
             Name:
@@ -98,7 +98,7 @@ export function ContactMe() {
 
         <div className="mb-4">
           <label
-            className="block text-[#e7ecef] font-medium mb-2 text-sm sm:text-base"
+            className="block text-[#e7ecef] font-medium mb-2 text-lg sm:text-xl"
             htmlFor="email"
           >
             Email:
@@ -121,7 +121,7 @@ export function ContactMe() {
       
         <div className="mb-6">
           <label
-            className="block text-[#e7ecef] font-medium mb-2 text-sm sm:text-base"
+            className="block text-[#e7ecef] font-medium mb-2 text-lg sm:text-xl"
             htmlFor="message"
           >
             Message:
